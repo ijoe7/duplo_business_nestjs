@@ -105,6 +105,51 @@ You can also pull the Docker image of this application from the following reposi
 
   *   docker pull ijoe7/duplo-business-task
 
+## Possible Enhancements and Future Features
+
+While the current implementation meets the specified requirements, there are several areas where additional features and improvements could be made to enhance the functionality and usability of the Duplo platform. Here are some possible enhancements:
+
+### User Management
+- Create endpoints to handle user authentication and authorization.
+- Implement guards to restrict access to certain endpoints based on user roles.
+
+### Business Management
+- Develop endpoints to allow business owners to create and manage their business accounts.
+- Implement features for business account verification and approval.
+
+### Inventory Management
+- Enhance order curating functionality to support more advanced inventory management features, such as stock tracking and alerts.
+- Introduce endpoints for managing inventory items, categories, and suppliers.
+
+### Reporting and Analytics
+- Create endpoints for generating reports on order history, sales performance, and inventory turnover.
+- Implement analytics features to provide insights into business performance and trends.
+
+### Security and Performance
+- Enhance error handling to provide more informative error messages and improve the robustness of the application.
+- Implement performance optimizations to ensure fast response times, especially for endpoints with large datasets.
+
+### Documentation and Testing
+- Improve documentation for code and API endpoints to make it easier for developers to understand and use the application.
+- Implement unit tests, integration tests, and end-to-end tests to ensure the reliability and correctness of the application.
+
+### Possible Endpoint Routes
+- **User Management**
+  - `POST /users`: Create a new user account.
+  - `POST /login`: Authenticate user credentials and generate access tokens.
+  - `GET /users/:id`: Retrieve user details by ID.
+  - `PUT /users/:id`: Update user information.
+
+- **Business Management**
+  - `POST /businesses`: Create a new business account.
+  - `GET /businesses/:id`: Retrieve business details by ID.
+  - `PUT /businesses/:id`: Update business information.
+
+- **Inventory Management**
+  - `POST /inventory/items`: Create a new inventory item.
+  - `GET /inventory/items/:id`: Retrieve inventory item details by ID.
+  - `PUT /inventory/items/:id`: Update inventory item information.
+
 ## Contributors
 
 - [Segun Iyanda](https://github.com/ijoe7)
